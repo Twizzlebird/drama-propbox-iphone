@@ -16,33 +16,6 @@
 		<script src='jquery.js'></script>
 		<script src="jquery.mobile-1.3.0.min.js"></script>
 		<script src="main.js"></script>
-		<script>
-		var ua = navigator.userAgent.toLowerCase();
-var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
-if(isAndroid) {
-function doPlay(soundId) {
-  var my_media = new Media("/android_asset/www/"+soundId+".mp3",
-    function() {
-	  my_media.release();
-    },
-    function(err) {
-	my_media.release();
-  });
-  my_media.play();
-}
-} else {
-function doPlay(soundId) {
-  var my_media = new Media(soundId+".mp3",
-    function() {
-	  my_media.release();
-    },
-    function(err) {
-	my_media.release();
-  });
-  my_media.play();
-}
-}
-		</script>
 	</head>
 	<!-- /head -->
 	
@@ -70,64 +43,64 @@ function doPlay(soundId) {
 <select id="playlist" onchange="updateMedia()" class="black" data-transition="none" data-native-menu="false">
 <option data-placeholder="false">Choose music</option>
 <optgroup label="Comedy">
-<option value="/android_asset/www/comedy-march.mp3" class="comedy">Comedy 1</option>
-<option value="/android_asset/www/comedy-redrivervalley.mp3" class="comedy">Comedy 2</option>
-<option value="/android_asset/www/comedy-slapstick.mp3" class="comedy">Comedy 3</option>
+<option value="comedy-march.mp3" class="comedy">Comedy 1</option>
+<option value="comedy-redrivervalley.mp3" class="comedy">Comedy 2</option>
+<option value="comedy-slapstick.mp3" class="comedy">Comedy 3</option>
 </optgroup>
 <optgroup label="Mystery">
-<option value="/android_asset/www/mystery-ambient.mp3" class="mystery">Mystery 1</option>
-<option value="/android_asset/www/mystery-distortguitar.mp3" class="mystery">Mystery 2</option>
-<option value="/android_asset/www/mystery-plodding.mp3" class="mystery">Mystery 3</option>
+<option value="mystery-ambient.mp3" class="mystery">Mystery 1</option>
+<option value="mystery-distortguitar.mp3" class="mystery">Mystery 2</option>
+<option value="mystery-plodding.mp3" class="mystery">Mystery 3</option>
 </optgroup>
 <optgroup label="Celebration">
-<option value="/android_asset/www/celebration-mariachi.mp3" class="celebration">Celebration 1</option>
-<option value="/android_asset/www/celebrate-2.mp3" class="celebration">Celebration 2</option>
-<option value="/android_asset/www/celebrate-3.mp3" class="celebration">Celebration 3</option>
+<option value="celebration-mariachi.mp3" class="celebration">Celebration 1</option>
+<option value="celebrate-2.mp3" class="celebration">Celebration 2</option>
+<option value="celebrate-3.mp3" class="celebration">Celebration 3</option>
 </optgroup>
 <optgroup label="Elizabethan-esque">
-<option value="/android_asset/www/elizabethan-1.mp3" class="elizabethan">Elizabethan 1</option>
-<option value="/android_asset/www/elizabethan-2.mp3" class="elizabethan">Elizabethan 2</option>
-<option value="/android_asset/www/elizabethan-3.mp3" class="elizabethan">Elizabethan 3</option>
+<option value="elizabethan-1.mp3" class="elizabethan">Elizabethan 1</option>
+<option value="elizabethan-2.mp3" class="elizabethan">Elizabethan 2</option>
+<option value="elizabethan-3.mp3" class="elizabethan">Elizabethan 3</option>
 </optgroup>
 <optgroup label="Excited">
-<option value="/android_asset/www/excited-1.mp3" class="excited">Excited 1</option>
-<option value="/android_asset/www/excited-2.mp3" class="excited">Excited 2</option>
-<option value="/android_asset/www/excited-3.mp3" class="excited">Excited 3</option>
+<option value="excited-1.mp3" class="excited">Excited 1</option>
+<option value="excited-2.mp3" class="excited">Excited 2</option>
+<option value="excited-3.mp3" class="excited">Excited 3</option>
 </optgroup>
 <optgroup label="Funereal">
-<option value="/android_asset/www/funeral-1.mp3" class="funereal">Funereal 1</option>
-<option value="/android_asset/www/funeral-2.mp3" class="funereal">Funereal 2</option>
-<option value="/android_asset/www/funeral-3.mp3" class="funereal">Funereal 3</option>
+<option value="funeral-1.mp3" class="funereal">Funereal 1</option>
+<option value="funeral-2.mp3" class="funereal">Funereal 2</option>
+<option value="funeral-3.mp3" class="funereal">Funereal 3</option>
 </optgroup>
 <optgroup label="Happy">
-<option value="/android_asset/www/happy-drumnbass.mp3" class="happy">Happy 1</option>
-<option value="/android_asset/www/happy-electro.mp3" class="happy">Happy 2</option>
-<option value="/android_asset/www/happy-sunshine.mp3" class="happy">Happy 3</option>
+<option value="happy-drumnbass.mp3" class="happy">Happy 1</option>
+<option value="happy-electro.mp3" class="happy">Happy 2</option>
+<option value="happy-sunshine.mp3" class="happy">Happy 3</option>
 </optgroup>
 <optgroup label="Hopeful">
-<option value="/android_asset/www/hopeful-blissful.mp3" class="happy">Hopeful 1</option>
-<option value="/android_asset/www/hopeful-pluckedstrings.mp3" class="happy">Hopeful 2</option>
-<option value="/android_asset/www/hopeful-wonkysynthbass.mp3" class="happy">Hopeful 3</option>
+<option value="hopeful-blissful.mp3" class="happy">Hopeful 1</option>
+<option value="hopeful-pluckedstrings.mp3" class="happy">Hopeful 2</option>
+<option value="hopeful-wonkysynthbass.mp3" class="happy">Hopeful 3</option>
 </optgroup>
 <optgroup label="Sad">
-<option value="/android_asset/www/sad-ambient.mp3" class="sad">Sad 1</option>
-<option value="/android_asset/www/sad-guitarchello.mp3" class="sad">Sad 2</option>
-<option value="/android_asset/www/sad-streetsofcairo.mp3" class="sad">Sad 3</option>
+<option value="sad-ambient.mp3" class="sad">Sad 1</option>
+<option value="sad-guitarchello.mp3" class="sad">Sad 2</option>
+<option value="sad-streetsofcairo.mp3" class="sad">Sad 3</option>
 </optgroup>
 <optgroup label="Silent">
-<option value="/android_asset/www/silent-theentertainer.mp3" class="silent">Silent 1</option>
-<option value="/android_asset/www/silent-sinister.mp3" class="silent">Silent 2</option>
-<option value="/android_asset/www/silent-bouncy.mp3" class="silent">Silent 3</option>
+<option value="silent-theentertainer.mp3" class="silent">Silent 1</option>
+<option value="silent-sinister.mp3" class="silent">Silent 2</option>
+<option value="silent-bouncy.mp3" class="silent">Silent 3</option>
 </optgroup>
 <optgroup label="Spooky">
-<option value="/android_asset/www/spooky-ambient.mp3" class="spooky">Spooky 1</option>
-<option value="/android_asset/www/spooky-horror.mp3" class="spooky">Spooky 2</option>
-<option value="/android_asset/www/spooky-forest.mp3" class="spooky">Spooky 3</option>
+<option value="spooky-ambient.mp3" class="spooky">Spooky 1</option>
+<option value="spooky-horror.mp3" class="spooky">Spooky 2</option>
+<option value="spooky-forest.mp3" class="spooky">Spooky 3</option>
 </optgroup>
 <optgroup label="Tense">
-<option value="/android_asset/www/tense-building.mp3" class="tense">Tense 1</option>
-<option value="/android_asset/www/tense-dramatic.mp3" class="tense">Tense 2</option>
-<option value="/android_asset/www/tense-highenergy.mp3" class="tense">Tense 3</option>
+<option value="tense-building.mp3" class="tense">Tense 1</option>
+<option value="tense-dramatic.mp3" class="tense">Tense 2</option>
+<option value="tense-highenergy.mp3" class="tense">Tense 3</option>
 </optgroup>
 </select>
 
