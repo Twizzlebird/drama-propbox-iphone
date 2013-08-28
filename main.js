@@ -22,7 +22,12 @@ function playAudio() {
 	playing = false;
 }
 } 
-
+function stopAudio() {
+	myMedia.stop();
+	playing = false;
+	document.getElementById('play').src = "images/play.png";
+	document.getElementById('audio_position').innerHTML = "0 sec";
+} 
 function onLoad() {
 	document.addEventListener("deviceready", onDeviceReady, false);
 }
