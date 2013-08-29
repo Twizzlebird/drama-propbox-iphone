@@ -17,7 +17,10 @@ background: -o-linear-gradient(top,  #3d7a6c 0%,#2c6b53 100%);
 background: -ms-linear-gradient(top,  #3d7a6c 0%,#2c6b53 100%);
 background: linear-gradient(to bottom,  #3d7a6c 0%,#2c6b53 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d7a6c', endColorstr='#2c6b53',GradientType=0 );}
-ul.ui-corner-all{border-radius:0px !important;}
+
+ul.ui-corner-all .ui-btn{border-radius:10px;}
+
+.ui-popup-screen.in {opacity: 1 !important;}
 
 /*music player*/
 #home .ui-block-a {padding:10px 0px;}
@@ -51,7 +54,7 @@ img{max-width:100%;}
 #sprocketright	{position:absolute;height:100%;width:20px;right:-15px;top:0px;background:url(images/sprockets.png);}
 
 /*SFX page*/
-#effectsbuttons{max-width:500px;margin:20px auto;background:url(images/leather.jpg);box-shadow:0px 0px 5px #000;padding:0px 5px 10px 5px;border:3px solid #555555;border-radius:8px;}
+#effectsbuttons{max-width:500px;margin:0px auto;background:url(images/leather.jpg);box-shadow:0px 0px 5px #000;padding:0px 5px 10px 5px;border:3px solid #555555;border-radius:8px;}
 #effectsbuttons .ui-btn{border-radius:2px;
 background: #3b7759; /* Old browsers */
 /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -65,6 +68,7 @@ background: linear-gradient(to bottom,  #3b7759 0%,#478e63 50%,#41825e 51%,#4fa0
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b7759', endColorstr='#4fa06d',GradientType=0 ); /* IE6-8 */
 
 }
+#lightingeffects .ui-content, #soundfx .ui-content{padding-top:0px !important;}
 
 /*reference*/
 ul.col-2 li{width:48%;float:left;margin:10px 1% !important;text-align:center;}
@@ -86,5 +90,5 @@ ul.col-2 li{width:100%;float:none;margin:3% 0% !important;}
 /*videos*/
 #lfxbuttons{text-align:center;max-width:500px;margin:0px auto;}
 #lfxbuttons section{box-shadow:0px 0px 10px 0px #000;}
-video,#lfxbuttons img{width:100%;min-width:300px;}
+video,#lfxbuttons img{width:100%;min-width:300px;min-height:300px;}
 #lightingeffects .ui-popup{min-width:300px;}
