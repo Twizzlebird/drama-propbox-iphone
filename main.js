@@ -135,26 +135,6 @@ $('#locationtxt').text( randloc );;
 $('#scenariotxt').text( randscen );
 });
 
-//sound effects show hide based on select option
-$('#effectsbuttons').hide();
-$("select#sfxgenre").change(function() {
-$('.ui-popup-container').hide();
-$('#effectsbuttons').show();
-var selectedoption = $(this).find("option:selected").val();
-$('#effectsbuttons section').hide();
-$('#' + selectedoption).show();
-});
-
-//as above butforlfx
-$('#lfxbuttons section').hide();
-$("select#lfxgenre").change(function() {
-$('#emptystage').hide();
-$('.ui-popup-container').hide();
-$('#lfxbuttons section').hide();
-var selectedoption = $(this).find("option:selected").val();
-$('section#' + selectedoption).show();
-});
-
 $("#home a").click(function() {
 $('#effectsbuttons').hide();
 var myselect = $("select#sfxgenre");

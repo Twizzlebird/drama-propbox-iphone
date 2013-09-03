@@ -55,8 +55,8 @@ img{max-width:100%;}
 #sprocketright	{position:absolute;height:100%;width:20px;right:-15px;top:0px;background:url(images/sprockets.png);}
 
 /*SFX page*/
-#effectsbuttons{max-width:500px;margin:0px auto;background:url(images/leather.jpg);box-shadow:0px 0px 5px #000;padding:0px 5px 10px 5px;border:3px solid #555555;border-radius:8px;}
-#effectsbuttons .ui-btn{border-radius:2px;
+.effectsbuttons,#lfxbuttons{max-width:500px;margin:0px auto;background:url(images/leather.jpg);box-shadow:0px 0px 5px #000;padding:0px 5px 10px 5px;border:3px solid #555555;border-radius:8px;}
+.effectsbuttons .ui-btn,#lfxbuttons .ui-btn{border-radius:2px;
 background: #3b7759; /* Old browsers */
 /* IE9 SVG, needs conditional override of 'filter' to 'none' */
 background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzNiNzc1OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzQ3OGU2MyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iIzQxODI1ZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0ZmEwNmQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -91,5 +91,5 @@ ul.col-2 li{width:100%;float:none;margin:3% 0% !important;}
 /*videos*/
 #lfxbuttons{text-align:center;max-width:500px;margin:0px auto;}
 #lfxbuttons section{box-shadow:0px 0px 10px 0px #000;}
-video,#lfxbuttons img{width:100%;min-width:300px;min-height:300px;}
+video,#lfxbuttons .ui-popup img{width:100%;min-width:300px;min-height:300px;}
 #lightingeffects .ui-popup{min-width:300px;}
