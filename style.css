@@ -95,5 +95,5 @@ video,#lfxbuttons .ui-popup img{width:100%;min-width:300px;min-height:300px;}
 #lightingeffects .ui-popup{width:300px;}
 
 @media only screen and (min-width: 600px) {
-#lightingeffects .ui-popup{width:500px;}
+#lightingeffects .ui-popup{width:500px;height:500px;}
 }
