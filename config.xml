@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.dramapropbox"
+        version   = "1.0.0">
+
+
+    <name>Drama Propbox</name>
+
+    <description>
+        Drama propbox IOS. 
+    </description>
+
+    <author href="https://twizzlebird.co.uk" email="info@twizzlebird.co.uk">
+        Hardeep Shoker 
+    </author>
+	
+	<gap:splash src="splash/splash-480x320.png"   gap:platform="ios" width="320"  height="480"  /><!-- Regular iPhone4 -->
+	<gap:splash src="splash/splash-640x960.png"   gap:platform="ios" width="640"  height="960"  /><!-- Retina iPhone4 -->
+	<gap:splash src="splash/splash-640x1136.png"  gap:platform="ios" width="640"  height="1136" /><!-- iPhone5 -->
+	<gap:splash src="splash/splash-768x1004.png"  gap:platform="ios" width="768"  height="1004" /><!-- iPad Portrait -->
+	<gap:splash src="splash/splash-1024x748.png"  gap:platform="ios" width="1024" height="748"  /><!-- iPad Landscape -->
+	<!-- Retina iPads: Requires PhoneGap 2.5.0 or higher -->
+	<gap:splash src="splash/splash-1536x2008.png" gap:platform="ios" width="1536" height="2008" /><!-- Portrait -->
+	<gap:splash src="splash/splash-2048x1496.png" gap:platform="ios" width="2048" height="1496" /><!-- Landscape -->
+
+</widget>
