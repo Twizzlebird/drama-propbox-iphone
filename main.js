@@ -138,7 +138,7 @@ $('#scenariotxt').text( randscen );
 $('video').bind('ended', function(){
 setTimeout(function(){
   $(".ui-popup").popup("close");
-}, 1000);
+}, 2000);
 })
 
 });
