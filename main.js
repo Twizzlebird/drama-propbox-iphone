@@ -135,11 +135,6 @@ $('#locationtxt').text( randloc );;
 $('#scenariotxt').text( randscen );
 });
 
-$('video').bind('ended', function(){
-$(this)[0].load();
-})
-
-
 });
 
 

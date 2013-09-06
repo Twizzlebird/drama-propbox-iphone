@@ -12,7 +12,7 @@
     </description>
 
     <author href="https://twizzlebird.co.uk" email="info@twizzlebird.co.uk">
-        David Wright
+        Hardeep Shoker 
     </author>
 	
 	<preference name="prerendered-icon" value="true" />
@@ -25,12 +25,5 @@
 	<!-- Retina iPads: Requires PhoneGap 2.5.0 or higher -->
 	<gap:splash src="splash/splash-1536x2008.png" gap:platform="ios" width="1536" height="2008" /><!-- Portrait -->
 	<gap:splash src="splash/splash-2048x1496.png" gap:platform="ios" width="2048" height="1496" /><!-- Landscape -->
-	
-	<icon src="icons/icon-57.png" gap:platform="ios" width="57" height="57" />
-	<icon src="icons/icon-72.png" gap:platform="ios" width="72" height="72" />
-	<icon src="icons/icon-114.png" gap:platform="ios" width="114" height="114" />
-
-	<!-- retina iPad support: PhoneGap 2.5.0+ only -->
-	<icon src="icons/icon-144.png" gap:platform="ios" width="144" height="144" />
 
 </widget>
