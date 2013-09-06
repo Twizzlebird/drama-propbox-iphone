@@ -136,12 +136,10 @@ $('#scenariotxt').text( randscen );
 });
 
 $('video').bind('ended', function(){
-var thisvid = $(this);
 setTimeout(function(){
-$(thisvid)[0].load();
+  $(".ui-popup").popup("close");
 }, 1000);
 })
-
 
 });
 
