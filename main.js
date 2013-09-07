@@ -142,44 +142,6 @@ setTimeout(function(){
 })
 
 $( "#lfx-followspot" ).bind({
-   popupafteropen: function(event, ui) {
-   $('#followspotvid').get(0).play()
-   }
-});
-
-$( "#lfx-blackout" ).bind({
-   popupafteropen: function(event, ui) {
-   $('#blackoutvid').get(0).play()
-   }
-});
-
-$( "#lfx-strobe" ).bind({
-   popupafteropen: function(event, ui) {
-   $('#strobevid').get(0).play()
-   }
-});
-
-$( "#lfx-xfade" ).bind({
-   popupafteropen: function(event, ui) {
-   $('#xfadevid').get(0).play()
-   }
-});
-
-$( "#lfx-snap" ).bind({
-   popupafteropen: function(event, ui) {
-   $('#snapvid').get(0).play()
-   }
-});
-
-$( "#lfx-scroller" ).bind({
-   popupafteropen: function(event, ui) {
-   var mediaElement = document.getElementById("scrollervid"); 
-mediaElement.pause(); 
-mediaElement.currentTime = 0.001;
-   }
-});
-
-$( "#lfx-followspot" ).bind({
    popupbeforeposition: function(event, ui) {
    $( "#lfx-followspot video" ).hide().delay(500).fadeIn(100);
    }
