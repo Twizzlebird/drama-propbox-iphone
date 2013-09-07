@@ -141,9 +141,9 @@ setTimeout(function(){
 }, 2000);
 })
 
-$( ".ui-popup" ).bind({
-   popupafterclose: function(event, ui) {
-   $('video')[0].load();
+$( "#lfx-followspot" ).bind({
+   popupafteropen: function(event, ui) {
+   $('#followspotvid').get(0).play()
    }
 });
 
