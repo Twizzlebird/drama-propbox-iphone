@@ -137,12 +137,15 @@ $('#scenariotxt').text( randscen );
 
 $('video').bind('ended', function(){
 setTimeout(function(){
-  $(".ui-popup").popup("close", function(){
-  $('#lfx-followspot video')[0].load();
-  $('#lfx-followspot video')[0].pause();
-  });
+  $(".ui-popup").popup("close");
 }, 2000);
 })
+
+$( ".ui-popup" ).bind({
+   popupafterclose: function(event, ui) {
+   $('video')[0].load();
+   }
+});
 
 $( "#lfx-followspot" ).bind({
    popupbeforeposition: function(event, ui) {
