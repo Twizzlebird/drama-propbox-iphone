@@ -141,6 +141,36 @@ setTimeout(function(){
 }, 2000);
 })
 
+$( "#lfx-followspot" ).bind({
+   popupbeforeposition: function(event, ui) {
+   $( "#lfx-followspot video" ).hide().delay(500).fadeIn();
+   }
+});
+$( "#lfx-blackout" ).bind({
+   popupbeforeposition: function(event, ui) {
+   $( "#lfx-blackout video" ).hide().delay(500).fadeIn();
+   }
+});
+$( "#lfx-strobe" ).bind({
+   popupbeforeposition: function(event, ui) {
+   $( "#lfx-strobe video" ).hide().delay(500).fadeIn();
+   }
+});
+$( "#lfx-xfade" ).bind({
+   popupbeforeposition: function(event, ui) {
+   $( "#lfx-xfade video" ).hide().delay(500).fadeIn();
+   }
+});
+$( "#lfx-snap" ).bind({
+   popupbeforeposition: function(event, ui) {
+   $( "#lfx-snap video" ).hide().delay(500).fadeIn();
+   }
+});
+$( "#lfx-scroller" ).bind({
+   popupbeforeposition: function(event, ui) {
+   $( "#lfx-scroller video" ).hide().delay(500).fadeIn();
+   }
+});
 
 });
 
