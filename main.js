@@ -135,25 +135,14 @@ $('#locationtxt').text( randloc );;
 $('#scenariotxt').text( randscen );
 });
 
-
 $('video').bind('ended', function(){
 setTimeout(function(){
-  $(".ui-popup").popup("close",function(){
-   $.mobile.changePage(
-    window.location.href,
-    {
-      allowSamePageTransition : true,
-      transition              : 'none',
-      showLoadMsg             : false,
-      reloadPage              : true
-    }
-  );
-  });
+  $(".ui-popup").popup("close");
 }, 2000);
 })
 
-});
 
+});
 
 
 
