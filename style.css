@@ -94,9 +94,10 @@ ul.col-2 li{width:100%;float:none;margin:3% 0% !important;}
     } 
 #lfxbuttons{text-align:center;max-width:500px;margin:20px auto;}
 #lfxbuttons section{box-shadow:0px 0px 10px 0px #000;}
-.ui-popup{border-radius:0px !important;-webkit-overflow-scrolling: touch;}
+.ui-popup{border-radius:0px !important;}
 .ui-popup img, .ui-popup video{width:100%;min-width:280px;min-height:280px;border:1px solid #6d6d6d !important;}
 #lightingeffects .ui-popup{width:280px;border:none !important;}
+div.popin{width:280px;height:280px;}
 .noiphone{display:none;}
 .noipad{display:inline-block;}
 
