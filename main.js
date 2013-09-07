@@ -135,25 +135,27 @@ $('#locationtxt').text( randloc );;
 $('#scenariotxt').text( randscen );
 });
 
+
 $('video').bind('ended', function(){
 setTimeout(function(){
-  $(".ui-popup").popup("close");
+  $(".ui-popup").popup("close",function(){
+   $.mobile.changePage(
+    window.location.href,
+    {
+      allowSamePageTransition : true,
+      transition              : 'none',
+      showLoadMsg             : false,
+      reloadPage              : true
+    }
+  );
+  });
 }, 2000);
 })
 
-$( ".selector" ).bind({
-   popupbeforeposition: function(event, ui) {
-   $(".ui-popup video").hide();
-   }
 });
 
-$( ".selector" ).bind({
-   popupafteropen: function(event, ui) {
-   $(".ui-popup video").show();
-   }
-});
 
-});
+
 
 
 
