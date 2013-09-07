@@ -23,11 +23,13 @@
 	<!-- body -->
 	<body>
 	
+	<a href="#" data-rel="back" id="backbtn">Back</a>
 	
 	<!-- home -->
 		<div data-role="page" data-add-back-btn="true" data-theme="a" id="home">
 			<header>
 				<img src="images/logo.png" alt="drama propbox" />
+				<a href="#home" class="homebtn" data-transition="none">Home</a>
 			</header>
 			<div data-role="content">
 				<a href="#soundfx" data-role="button" data-icon="sfx" data-transition="none">Sound FX</a>
@@ -110,7 +112,7 @@
 <div class="ui-grid-a">
 <div class="ui-block-a">
 <a href="#" onclick="playAudio()"><img id="play" src="images/play.png"></a>
-<a href="#" onClick="stopAudio()"><img id="stop" src="images/stop.png"></a>
+<a href="#" onClick="history.go(0)"><img id="stop" src="images/stop.png"></a>
 </div>
 <div class="ui-block-b">
 <p id="audio_position">0 sec</p>
