@@ -141,6 +141,17 @@ setTimeout(function(){
 }, 2000);
 })
 
+$( ".selector" ).bind({
+   popupbeforeposition: function(event, ui) {
+   $(".ui-popup video").hide();
+   }
+});
+
+$( ".selector" ).bind({
+   popupafteropen: function(event, ui) {
+   $(".ui-popup video").show();
+   }
+});
 
 });
 
