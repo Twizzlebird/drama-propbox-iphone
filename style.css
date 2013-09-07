@@ -98,6 +98,6 @@ video,#lfxbuttons .ui-popup img{width:100%;min-width:280px;min-height:280px;bord
 
 @media only screen and (min-width: 600px) {
 #lightingeffects .ui-popup {width:500px;height:500px;position:relative;overflow:hidden;}
-video{position:absolute;width:100%;height:100%;}
+video{width:100%;height:100%;}
 div.popin{position:relative;width:500px;height:500px;}
 }
