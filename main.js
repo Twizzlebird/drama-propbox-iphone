@@ -172,14 +172,6 @@ $( "#lfx-scroller" ).bind({
    }
 });
 
-$('*[data-role="page"] header').html( "<img src='images/logo.png' alt='drama propbox' /><a href='#home' class='homebtn' data-transition='none'>Home</a><a href='#' data-rel='back' id='backbtn'>Back</a>" );
-
-var ref =null;
-function openExternal(){
-ref = window.open('http://www.drama-lesson-plans.co.uk/', '_blank', 'location=no');//can and advise you set location option to 'no' but can also be 'yes'.
-ref.addEventListener('exit', function(event) { alert(event.type); });//can delete the alert
-}
-
 });
 
 
